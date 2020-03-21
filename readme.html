@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>readme.html</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+
+</head>
+
+<body>
+
+<h1>Social Media Project</h1>
+
+<h2>An experiment</h2>
+
+<h3>Goal of this project</h3>
+
+<ul>
+<li>Experiment with different technologies, primarily <code>js</code></li>
+<li>Build a social media platform, no bullshits in it, just a platform to connect people, talk to each other, post whatever they want for their friends, that's it.</li>
+</ul>
+
+<h3>Features list</h3>
+
+<ul>
+<li>[ ] Login/Registration</li>
+<li>[ ] Chat functionality</li>
+<li>[ ] Friends functionality</li>
+<li>[ ] Profiles</li>
+<li>[ ] Personal page, friends can view it</li>
+<li>[ ] Comments functionality</li>
+<li>[ ] Notification center</li>
+<li><strong>We gonna add more to this list as we go on</strong></li>
+</ul>
+
+<h3>Technologies</h3>
+
+<ul>
+<li>Setup the whole workspace using <code>nx</code>, a monorepo solution by <code>nwrl</code></li>
+<li>For the backend services we going to use <code>express</code> with <code>typescript</code></li>
+<li>For the user management, we can either implement a passport strategy or use <code>keycloak</code>, im not decided yet.</li>
+<li>Obviously we are using <code>typescript</code>, no reason not to really.</li>
+<li>We <strong>might</strong> make a graphql layer between our backend and our frontend, if we do then we going to use <strong>apollo server</strong></li>
+<li>For the frontend we going to use <strong>react</strong>, the only reason is because i know this framework better than others</li>
+<li>For database, we going to use <strong>typeorm</strong> with postgress.</li>
+<li>For the realtime stuff (chat, notifications) we going to use <strong>socket.io</strong> in combination with redis, of course we gonna use redis in <strong>persistence</strong> mode</li>
+<li>We going to use <strong>docker</strong> to provision everything we need.</li>
+<li><strong>We gonna add more to this list as we go on</strong></li>
+</ul>
+
+<h3>Roadmap</h3>
+
+<ul>
+<li>[ ] Setup the <code>nx workspace</code></li>
+<li>[ ] Setup an initial <code>docker compose</code> file to provision a database, maybe the redis as well</li>
+<li>[ ] Setup an initial <code>express</code> service and make a connection to our database using typeorm.</li>
+<li>[ ] Setup our frontend <code>react</code> application.</li>
+<li>[ ] Connect our frontend with our backend using a simple endpoint.</li>
+<li>[ ] Setup our keycloak server, create a realm for development, create an initial client for our frontend, setup our roles, create a client for our express service.</li>
+<li>[ ] Create a connection to the frontend client we created previously with keycloak and protect an endpoint to the backend.</li>
+<li>...more to come.</li>
+</ul>
+
+</body>
+</html>
